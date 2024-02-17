@@ -13,7 +13,6 @@ class PomodoroService {
 		const response = await axiosWithAuth.get<IPomodoroSessionResponse>(
 			`${this.BASE_URL}/today`
 		)
-
 		return response
 	}
 
@@ -21,7 +20,6 @@ class PomodoroService {
 		const response = await axiosWithAuth.post<IPomodoroSessionResponse>(
 			this.BASE_URL
 		)
-
 		return response
 	}
 

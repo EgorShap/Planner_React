@@ -1,9 +1,6 @@
-import { IBase } from './root.types'
+import type { IBase } from './root.types'
 
 export interface ITimeBlockResponse extends IBase {
-	id: string
-	createdAt?: string
-	updatedAt?: string
 	name: string
 	color?: string
 	duration: number
