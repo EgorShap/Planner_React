@@ -1,5 +1,5 @@
-import { ITaskResponse, TypeTaskFormState } from "@/types/task.types"
-import { Dispatch, SetStateAction } from "react"
+import type { ITaskResponse, TypeTaskFormState } from "@/types/task.types"
+import type { Dispatch, SetStateAction } from "react"
 import { useTaskDebounce } from "../hooks/useTaskDebounce"
 import { Controller, useForm } from "react-hook-form"
 import cn from 'clsx'
@@ -14,7 +14,7 @@ import styles from './ListView.module.scss'
 
 interface IListRow {
     item: ITaskResponse
-    setItems: Dispatch<SetStateAction<ITaskResponse[]>>
+    setItems: Dispatch<SetStateAction<ITaskResponse[] | undefined>>
 }
 
 export function ListRow({ item, setItems }: IListRow) {
