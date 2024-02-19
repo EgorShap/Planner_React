@@ -42,7 +42,6 @@ export function ListRowParent({
                                     ref={provided.innerRef}
                                     {...provided.draggableProps}
                                     {...provided.dragHandleProps}
-                                    className="z-[4] relative"
                                 >
                                     <ListRow
                                         key={item.id}

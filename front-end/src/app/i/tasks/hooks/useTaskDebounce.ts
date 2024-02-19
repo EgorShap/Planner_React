@@ -18,14 +18,14 @@ export function useTaskDebounce({ watch, itemId }: IUseTaskDebounce) {
 	const debouncedCreateTask = useCallback(
 		debounce((formData: TypeTaskFormState) => {
 			createTask(formData)
-		}, 444),
+		}, 600),
 		[]
 	)
 
 	const debouncedUpdateTask = useCallback(
 		debounce((formData: TypeTaskFormState) => {
 			updateTask({ id: itemId, data: formData })
-		}, 444),
+		}, 600),
 		[]
 	)
 
